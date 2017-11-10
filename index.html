@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+	<title>Hangman</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="jumbotron">
+		  <h1 class="display-3">AMERICA</h1>
+		  	<p class="lead">Guess 1 of the 50 States
+		  	</p>
+		  	<hr class="my-4">
+		  	<p>Click any letter to begin...</p>
+		  
+		</div>
+
+		<div class="card" style="width: 20rem;">
+		  <div class="card-header"><strong>
+		    Current Word</strong>
+		  </div>
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item"><span id="answer"></span></li>
+		  </ul>
+		</div>
+
+		<div class="card" style="width: 20rem;">
+		  <div class="card-header"><strong>
+		    Letters Already Guessed</strong>
+		  </div>
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item"><span id="letterGuessed"></span></li>
+		  </ul>
+		</div>
+
+		<div class="card" style="width: 20rem;">
+  			<ul class="list-group list-group-flush">
+    		<li class="list-group-item"><strong>Wins: </strong><span id="wins"></span></li>
+    		<li class="list-group-item"><strong># of Guesses Remaining: </strong><span id="guessRemain"></span></li>
+  		</ul>
+		</div>
+
+
+
+	</div>
+
+	
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
